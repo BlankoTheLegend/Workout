@@ -1,5 +1,3 @@
-// script.js
-
 // Register service worker
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('service-worker.js')
@@ -45,7 +43,6 @@ const today = new Date();
 const dayOfWeek = dayNames[today.getDay()];
 const workout = workouts[dayOfWeek];
 
-// Display in HTML
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("day").textContent = `Today is: ${dayOfWeek}`;
   document.getElementById("workout").textContent = `Today's workout:\n${workout}`;
